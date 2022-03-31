@@ -1,0 +1,118 @@
+main
+{
+    height: 100vh;
+    position: relative;
+    .info
+    {
+        padding: 1.5rem;
+        background-color: var(--color-bg);
+        z-index: 9999999999;
+        width: 20rem;
+        position: absolute;
+        box-shadow: 1rem 1rem 1rem var(--color-bg1);
+        left: 10%;
+        top: 5%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        .photo
+        {
+            width: 10rem;
+            height: 10rem;
+            overflow: hidden;
+            img
+            {
+                width: 100%;
+                max-height: fit-content;
+                object-fit: contain;
+            }
+        }
+        h3
+        {
+            color: white;
+            margin-top: 1rem;
+        }
+        p{
+            color: white;
+             margin-top: 2rem;
+            
+            em
+            {
+                color: white;
+                margin-right: 1rem;
+            }
+        }
+       
+       
+        
+    }
+}
+.section
+{
+    margin: 5rem;
+    padding: 2rem;
+    position: relative;
+    justify-content: end;
+    
+    background-color: var(--color-bg1);
+    display: flex;
+    overflow: hidden;
+
+   
+    .conatact
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+        width: 45%;
+        .name{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        }
+
+        input[type="text"],input[type="email"],textarea
+        {
+            padding: 1rem;
+            background-color: var(--color-bg);
+            color: white;
+            width: 100%;
+            border: 1px solid var(--color-bg2);
+            
+            &::placeholder
+            {
+                color: white;
+            }
+        }
+        input[type="email"]
+        {
+            margin-top: 1rem;
+            width: 100%;
+        }
+        textarea
+        {
+            margin-top: 2rem;
+            width: 100%;
+        }
+
+        .btn-danger
+        {
+            background-color: var(--color-danger);
+            color: white;
+            margin-top: 1rem;
+            border: 10px;
+            transition: all 400ms ease;
+            margin-left: 1rem;
+            cursor: pointer;
+            &:hover
+            {
+                background-color: transparent;
+                border: 1px solid var(--color-danger);
+            }
+        }
+
+
+    }
+
+}

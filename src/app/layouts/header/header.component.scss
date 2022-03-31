@@ -1,0 +1,56 @@
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+    padding: 2rem;
+    .logo
+    {
+        h3{
+            color: var(--color-white);
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+        }
+    }
+    .menu
+    {
+        width: 50%;
+        height: 36px;
+        display: flex;
+        justify-content: space-around;
+        a{
+            color: var(--color-white);
+            font-size: 1rem;
+            position: relative;
+           
+            &:hover
+            {
+                opacity: .7;
+                &::after
+                {
+                    width: 100%;
+                }
+            }
+            &::after
+            {
+                content: "";
+                width: 0%;
+                height: 5px;
+                position: absolute;
+                bottom: 0px;
+                left: 0%;
+                background: var(--color-white);
+                transition: var(--transition);
+            }
+        }
+        .active
+        {
+            &::after
+            {
+                width: 100%;
+            }
+        }
+    }
+}

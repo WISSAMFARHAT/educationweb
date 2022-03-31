@@ -1,0 +1,52 @@
+footer
+{
+    margin-top: 2rem;
+    padding: 2rem;
+
+    background-color: var(--color-bg2);
+    .category
+    {
+        display: flex;
+        margin-top: 2rem;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 23%;
+            margin: 0 1rem;
+            h3{
+                color: white;
+            }
+            p{
+                color: white;
+                margin-top: 1rem;
+            }
+            a{
+                color: white;
+                margin-top: 1rem;
+            }
+            .social
+            {
+                display: flex;
+                flex-direction: row;
+                margin-top: 2rem;
+                width: 70%;
+                justify-content: space-between;
+                em
+                {
+                    color: white;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .copy-right
+    {
+        margin-top: 2rem;
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+    }
+}
